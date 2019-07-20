@@ -2,6 +2,12 @@ package com.one.springdemo;
 
 public class ClimbingCoach implements Coach {
 
+
+	private FortuneService fortuneService;
+	
+	public ClimbingCoach(FortuneService theFortuneService) {
+		fortuneService = theFortuneService;
+	}
 	@Override
 	public String getDailyWorkout() {
 		return "1 hour of bouldering climbing";
@@ -9,8 +15,7 @@ public class ClimbingCoach implements Coach {
 
 	@Override
 	public String getDailyFortune() {
-		// TODO Auto-generated method stub
-		return null;
+		return "GoGoGo! "+ fortuneService.getFortune();
 	}
 
 }

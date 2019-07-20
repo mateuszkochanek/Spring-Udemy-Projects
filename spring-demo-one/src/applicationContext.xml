@@ -9,14 +9,14 @@
 
     <!-- Define your beans here -->
     <bean id="myFortune"
-    	class="com.one.springdemo.HappyFortuneService">
+    	class="com.one.springdemo.HappyFortuneSrrvice">
     </bean>
     
     <bean id="myCoach"
-    	class="com.one.springdemo.ClimbingCoach">
+    	class="com.one.springdemo.TrackCoach">
     	
     	<!-- constructor injection -->
-    	<constructor-arg ref="myfortune"/>
+    	<constructor-arg ref="myFortune"/>
     </bean>
 </beans>
 
