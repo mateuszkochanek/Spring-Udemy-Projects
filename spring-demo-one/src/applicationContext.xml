@@ -8,7 +8,7 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <!-- Define your beans here -->
-    <bean id="myFortune"
+    <bean id="myFortuneService"
     	class="com.one.springdemo.HappyFortuneSrrvice">
     </bean>
     
@@ -16,7 +16,14 @@
     	class="com.one.springdemo.TrackCoach">
     	
     	<!-- constructor injection -->
-    	<constructor-arg ref="myFortune"/>
+    	<constructor-arg ref="myFortuneService"/>
+    </bean>
+    
+    <bean id="myClimbingCoach"
+    	class="com.one.springdemo.ClimbingCoach">
+    	
+    	<!-- setter injection -->
+    	<property name="fortuneService" ref="myFortuneService"/>
     </bean>
 </beans>
 
