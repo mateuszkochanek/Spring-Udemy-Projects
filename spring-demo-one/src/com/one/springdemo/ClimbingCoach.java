@@ -7,4 +7,10 @@ public class ClimbingCoach implements Coach {
 		return "1 hour of bouldering climbing";
 	}
 
+	@Override
+	public String getDailyFortune() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
 }
