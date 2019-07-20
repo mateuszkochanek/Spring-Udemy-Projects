@@ -5,8 +5,8 @@ public class ClimbingCoach implements Coach {
 
 	private FortuneService fortuneService;
 	
-	public ClimbingCoach(FortuneService theFortuneService) {
-		fortuneService = theFortuneService;
+	public ClimbingCoach() {
+		System.out.println("ClimbingCoach: no-arg const");
 	}
 	@Override
 	public String getDailyWorkout() {
@@ -16,6 +16,10 @@ public class ClimbingCoach implements Coach {
 	@Override
 	public String getDailyFortune() {
 		return "GoGoGo! "+ fortuneService.getFortune();
+	}
+	public void setFortuneService(FortuneService fortuneService) {
+		System.out.println("ClimbingCoach: setter");
+		this.fortuneService = fortuneService;
 	}
 
 }
