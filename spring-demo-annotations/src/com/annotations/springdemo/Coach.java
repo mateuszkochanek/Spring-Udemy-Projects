@@ -2,5 +2,7 @@ package com.annotations.springdemo;
 
 public interface Coach {
 
-	public String GetDailyWorkout();
+	public String getDailyWorkout();
+	
+	public String getDailyFortune();
 }
