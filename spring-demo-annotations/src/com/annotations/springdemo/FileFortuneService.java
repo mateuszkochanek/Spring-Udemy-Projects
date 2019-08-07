@@ -16,8 +16,7 @@ public class FileFortuneService implements FortuneService {
 	private Random myRandom = new Random();
 	
 	public FileFortuneService () {
-		File file = new File("D:\\Spring_Course_UD\\spring-demo-annotations\\src\\fortunes.txt");
-		
+		File file = new File(".//src//fortunes.txt");
 		try(BufferedReader br = new BufferedReader(new FileReader(file));) {
 			String s = br.readLine();
 			while (s != null) {
