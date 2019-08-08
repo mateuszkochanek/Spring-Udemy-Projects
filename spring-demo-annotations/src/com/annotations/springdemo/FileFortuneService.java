@@ -8,6 +8,8 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Random;
 
+import javax.annotation.PostConstruct;
+
 import org.springframework.stereotype.Component;
 
 @Component
@@ -15,7 +17,9 @@ public class FileFortuneService implements FortuneService {
 	protected ArrayList<String> data = new ArrayList<String>();
 	private Random myRandom = new Random();
 	
-	public FileFortuneService () {
+	@PostConstruct
+	public void GetfortunesFromFile () {
+		System.out.println("Doing fortune startup");
 		File file = new File(".//src//fortunes.txt");
 		try(BufferedReader br = new BufferedReader(new FileReader(file));) {
 			String s = br.readLine();

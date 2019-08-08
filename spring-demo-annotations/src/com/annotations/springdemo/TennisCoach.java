@@ -1,12 +1,14 @@
 package com.annotations.springdemo;
 
+import javax.annotation.PostConstruct;
+import javax.annotation.PreDestroy;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Component;
 
 @Component
-@Scope("prototype")
 public class TennisCoach implements Coach {
 	
 	@Autowired
@@ -19,6 +21,16 @@ public class TennisCoach implements Coach {
 	}*/
 	public TennisCoach() {
 		System.out.println("Inside default tennis coach const");
+	}
+	
+	@PostConstruct
+	public void doStartup() {
+		System.out.println("Doing startup");
+	}
+	
+	@PreDestroy
+	public void doCleanup() {
+		System.out.println("Destoy");
 	}
 	
 	/*@Autowired
@@ -36,5 +48,7 @@ public class TennisCoach implements Coach {
 	public String getDailyFortune() {
 		return fortuneService.getFortune();
 	}
+	
+	
 
 }
