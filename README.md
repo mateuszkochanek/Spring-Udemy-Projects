@@ -11,4 +11,8 @@ Every project is created in a different branch, every branch and project has it'
     - I learned about Bean Scopes.
 2. [spring-demo-annotations](https://github.com/mateuszkochanek/Spring-Udemy-Projects/tree/spring-demo-annotations)
     - I learned how to use Dependency Injection and Inversion of Control using Spring annotations.
-    - ...
+    - I learned how to configure Bean Scopes and Lifetimes using Spring annotations.
+    - I learned how to use Component Scanning.
+    - I used PostConstruct and PreDestrot anotations.
+    - I learned how to configure Spring using java configuration file (instead of XML).
+    - I used java to read values from properties file.
