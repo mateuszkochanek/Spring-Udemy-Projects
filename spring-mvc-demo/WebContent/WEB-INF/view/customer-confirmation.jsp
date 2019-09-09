@@ -8,7 +8,8 @@
 
 <body>
 
-<h1>The Customer ${customer.firstName} ${customer.lastName} was added to database!</h1>
+<h1>The Customer ${customer.firstName} ${customer.lastName} was added to database!</h1><br>
+you have ${customer.freePasses} free passes!
 
 </body>
 </html>
