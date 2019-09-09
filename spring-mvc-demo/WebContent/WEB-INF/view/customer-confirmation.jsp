@@ -11,6 +11,7 @@
 <h1>The Customer ${customer.firstName} ${customer.lastName} was added to database!</h1><br>
 You have ${customer.freePasses} free passes!<br>
 ${customer.postalCode} is your Postal code!
+${customer.courseCode} is your Course code!
 
 </body>
 </html>
