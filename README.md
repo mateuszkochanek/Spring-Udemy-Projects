@@ -16,3 +16,8 @@ Every project is created in a different branch, every branch and project has it'
     - I used PostConstruct and PreDestrot anotations.
     - I learned how to configure Spring using java configuration file (instead of XML).
     - I used java to read values from properties file.
+3. [spring-mvc-demo](https://github.com/mateuszkochanek/Spring-Udemy-Projects/tree/spring-mvc-demo)
+    - I learned how to build web apps using Spring framework.
+    - I learned how to use Controllers, Views, Forms, Request Mappings and Params, form Tags and Data Bindings.
+    - I learned how to validate text and number input in forms (using Hibernate Validator).
+    - I created custom annotation for my custom validation.
