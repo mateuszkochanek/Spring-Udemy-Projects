@@ -30,7 +30,9 @@ public class EagerLazyDemo {
 			int theId = 1;
 			Instructor tempInstructor = session.get(Instructor.class, theId);
 			
-			System.out.println("Courses: " + tempInstructor.getCourses());
+			System.out.println("HIII: Instructor: " + tempInstructor);
+			
+			System.out.println("HIII: Courses: " + tempInstructor.getCourses());
 			
 			
 			
