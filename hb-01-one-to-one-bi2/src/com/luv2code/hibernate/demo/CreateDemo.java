@@ -21,14 +21,14 @@ public class CreateDemo {
 		
 		try {
 			//create the objects
-			/*Instructor tempInstructor = new Instructor("Chad", "Darby","darby@luv2code.com");
+			Instructor tempInstructor = new Instructor("Chad", "Darby","darby@luv2code.com");
 			
 			InstructorDetail tempInstructorDetail = new InstructorDetail("https://222.333.444", "coding");
-			*/
+			/*
 			Instructor tempInstructor = new Instructor("Mati", "Kochanek","mateuszkochanek01@gmail.com");
 			
 			InstructorDetail tempInstructorDetail = new InstructorDetail("https://erthax", "Coding");
-			
+			*/
 			//associate the objects
 			tempInstructor.setInstructorDetail(tempInstructorDetail);
 			
