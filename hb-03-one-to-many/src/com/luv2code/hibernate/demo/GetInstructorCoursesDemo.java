@@ -30,17 +30,7 @@ public class GetInstructorCoursesDemo {
 			int theId = 1;
 			Instructor tempInstructor = session.get(Instructor.class, theId);
 			
-			//create some courses
-			Course tempCourse1 = new Course("Bouldering - Get to the TOP!");
-			Course tempCourse2 = new Course("Coding for Dummies? nope...");
-
-			//add courses to instructor
-			tempInstructor.add(tempCourse1);
-			tempInstructor.add(tempCourse2);
-
-			//save courses
-			session.save(tempCourse1);
-			session.save(tempCourse2);
+			System.out.println("Courses: " + tempInstructor.getCourses());
 			
 			
 			
