@@ -21,3 +21,8 @@ Every project is created in a different branch, every branch and project has it'
     - I learned how to use Controllers, Views, Forms, Request Mappings and Params, form Tags and Data Bindings.
     - I learned how to validate text and number input in forms (using Hibernate Validator).
     - I created custom annotation for my custom validation.
+4. [hibernate-demo](https://github.com/mateuszkochanek/Spring-Udemy-Projects/tree/hibernate-tutorial)
+    - I learned how to use hibernate annotations
+    - I learned about hibernate CRUD features
+    - I learned how to use hibernate annotations
+    - I learned how to use Advanced Mappings
