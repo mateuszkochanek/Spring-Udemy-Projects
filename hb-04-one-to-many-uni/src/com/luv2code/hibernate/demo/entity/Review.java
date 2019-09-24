@@ -9,7 +9,7 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
 @Entity
-@Table(name="revew")
+@Table(name="review")
 public class Review {
 	
 	@Id
@@ -18,8 +18,6 @@ public class Review {
 	private int id;
 	@Column(name="comment")
 	private String comment;
-	@ManyToOne(name="course_id")
-	private int courseId;
 	
 	public Review() {
 		
