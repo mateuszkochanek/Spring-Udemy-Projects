@@ -16,7 +16,7 @@ public class MainDemoApp {
 		MembershipDAO theMembershipDAO = context.getBean("membershipDAO", MembershipDAO.class);
 		
 		theAccountDAO.addAccount();
-		theMembershipDAO.addAccount();
+		theMembershipDAO.addMembership();
 		
 		context.close();
 	}
