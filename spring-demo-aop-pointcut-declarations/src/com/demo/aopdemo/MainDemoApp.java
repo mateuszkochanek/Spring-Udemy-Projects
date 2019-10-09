@@ -18,6 +18,12 @@ public class MainDemoApp {
 		
 		theAccountDAO.addAccount(myAccount, true);
 		theMembershipDAO.addMembership();
+		
+		theAccountDAO.setName("NAME");
+		theAccountDAO.setServiceCode("CODE");
+		String name = theAccountDAO.getName();
+		String code = theAccountDAO.getServiceCode();
+		
 		theAccountDAO.doWork();
 		theMembershipDAO.goToSleep();
 		
