@@ -8,13 +8,12 @@ import org.springframework.stereotype.Component;
 
 @Aspect
 @Component
-@Order(3)
-public class MyDemoLoggingAspect {
+@Order(2)
+public class MyApiAnaliticsAspect {
 
-	
+
 	@Before("com.demo.aopdemo.aspect.DemoAopExpressions.forDaoPackageNoGettersSetters()")
-	public void beforeAddAccountAdvice() {
-		System.out.println("\n -----> @Before executing add account?3");
+	public void performApiAnalitics() {
+		System.out.println("\n -----> @Before executing api analitics2");
 	}
-
 }
