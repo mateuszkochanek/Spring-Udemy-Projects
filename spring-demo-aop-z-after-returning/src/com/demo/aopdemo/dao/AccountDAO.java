@@ -21,8 +21,8 @@ public class AccountDAO {
 		Account temp3 = new Account("Luca", "Gold");
 		
 		myAccounts.add(temp1);
-		myAccounts.add(temp1);
-		myAccounts.add(temp1);
+		myAccounts.add(temp2);
+		myAccounts.add(temp3);
 		
 		
 		return myAccounts;

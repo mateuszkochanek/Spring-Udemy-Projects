@@ -26,10 +26,23 @@ public class MyDemoLoggingAspect {
 		System.out.println("\n ------> Executing After returning advice afte:" + method);
 		
 		System.out.println("\n ------> REsult is:" + result);
+		
+		convertAccountNamesToUpperCase(result);
+		
+		System.out.println("\n ------> REsult after modification is:" + result);
+
 
 	}
 	
 	
+	private void convertAccountNamesToUpperCase(List<Account> result) {
+		for(Account tempAccount : result) {
+			String theUpperName = tempAccount.getName().toUpperCase();
+			tempAccount.setName(theUpperName);
+		}
+	}
+
+
 	@Before("com.demo.aopdemo.aspect.DemoAopExpressions.forDaoPackageNoGettersSetters()")
 	public void beforeAddAccountAdvice(JoinPoint theJoinPoint) {
 		System.out.println("\n -----> @Before executing add account?3");
