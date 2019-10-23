@@ -17,9 +17,11 @@ public class AfterThrowingDemoApp {
 		AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
 		List<Account> theAccounts = null;
 		try {
-			theAccounts = theAccountDAO.findAccounts();
+			//boolean that will simulate exception
+			boolean tripWire = true;
+			theAccounts = theAccountDAO.findAccounts(tripWire);
 		} catch(Exception exc){
-			
+			System.out.println("\n\nMain Program caught exception: " + exc);
 		}
 		
 		System.out.println("\n\n Main Program: After Throwing");

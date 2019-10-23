@@ -16,7 +16,7 @@ public class AfterReturningDemoApp {
 		
 		AccountDAO theAccountDAO = context.getBean("accountDAO", AccountDAO.class);
 		
-		List<Account> theAccounts = theAccountDAO.findAccounts();
+		List<Account> theAccounts = theAccountDAO.findAccounts(false);
 		
 		System.out.println("\n\n Main Program: After Returning");
 		System.out.println("--------");
